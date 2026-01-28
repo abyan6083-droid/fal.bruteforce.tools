@@ -1,0 +1,79 @@
+______________________________
+______________________________||
+SCRIPT BY: MR FAL             ||
+INSTAGRAM: @fallpawangkucing  ||
+YOUTUBE:   @F4L               ||  
+______________________________||
+______________________________||
+      
+WHAT IS BRUTEFORCE TOOL?
+A brute force tool is computer program that tries to guess a password by testing many possible combinations until the correct one is found
+
+HOW DOES A BRUTE FORCE TOOL WORK?
+A brute force tool work by:
+1. Talking a target (for example, a password hash or login form)
+2. Trying every possible password combination
+3. Comparing the result with the correct one
+
+!BRUTE FORCE IS WHAT WE WILL USE!
+~JOHN THE RIPPER~
+
+----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+HOW TO USED JOHN THE RIPPER (BRUTE FORCE)/(PASSWORD CRACKING)
+1)Instal John
+  - Bash
+  sudo apt update
+  sudo apt install john -y
+
+2)Test John
+  john --test
+
+3)Create Password & hash itself
+  Example Password: study123
+  Create hash MD5:
+  
+  echo -n study123 | md5sum
+
+Sample Result:
+  
+  e1cbb0c3879af8347246f12c559a865b5
+
+4)Save hash to file
+  - Bash
+  nano hashku.txt
+Insert: e1cbb0c3879af8347246f12c559a865b5 (sample result)
+
+SAVE CTRL+O, ENTER, CTRL+X
+
+5)Running John (Basic Mode)
+  - Bash
+  john hashku.txt
+
+6)View Password Result
+  - Bash
+  john --show hashku.txt
+  
+  Example Output:
+  e1cbb0c3879af8347246f12c559a865b: study123
+
+______________________________________________________________________________________________________________
+______________________________________________________________________________________________________________
+
+Important!!!
+Don't X
+!It is prohibited to use it to hack other people's passwords!
+
+Use For
+- Practicum
+- School learning modules
+- Basic Cybersecurity
+- Personal Password Audit
+
+THANKS!!!
+
+
+
+
